@@ -1,0 +1,48 @@
+{
+  "name": "drink_builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "backend:build": "tsc --build",
+    "backend:start": "node dist/server.js",
+    "backend:dev": "concurrently \"tsc --build --watch\" \"nodemon -q dist/server.js\"",
+    "frontend:build": "webpack --mode production",
+    "frontend:start": "webpack --mode development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "mongoose": "^7.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/express-fileupload": "^1.4.1",
+    "@types/jest": "^29.5.2",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-modal": "^3.16.0",
+    "@types/react-tag-input": "^6.6.1",
+    "concurrently": "^8.2.0",
+    "css-loader": "^6.8.1",
+    "nodemon": "^2.0.22",
+    "react-images-uploading": "^3.1.7",
+    "react-modal": "^3.16.1",
+    "react-tag-input": "^6.8.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
